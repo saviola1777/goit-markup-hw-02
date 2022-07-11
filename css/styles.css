@@ -1,0 +1,88 @@
+body {
+  position: relative;
+width: 1600px;
+height: 1880px;
+background: #FFFFFF;
+margin: 0;
+padding: 0;
+}
+.header { 
+     display: flex;
+    height: 80px;
+width: 1600px;
+}
+.header-nav {
+display: flex;
+}
+
+.header-logo {
+    color: #2196F3;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+margin: 24px 0 25px 215px;
+text-decoration: none;
+}
+
+.header-span {
+color: #000000;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+text-decoration: none;
+padding-right: 93px;
+}
+.header-list {
+     list-style: none; /*забирає точки маркування */
+    display: flex  }
+.header-link {
+       
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: #212121;
+margin: 32px 50px 32px 0;
+text-decoration: none;
+    }
+    
+
+.contact {
+    list-style-type: none;
+display: flex;
+    
+}
+.mail {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+text-decoration: none;
+color: #757575;
+margin: 32px 50px 32px 331px;
+
+}
+.mail:active {
+    color: aqua;
+
+}
+.tel {
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+text-decoration: none;/* відміна підкреслювання */
+color: #757575; }
