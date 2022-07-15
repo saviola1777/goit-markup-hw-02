@@ -272,9 +272,10 @@ color: var(--first-color-text);
     color: #188CE8;
  }
  /* -------Друга секця списку  */
- .portfolio-items {
+ .portfolio-items  {
     list-style: none;
 }
+
 .portfolio-title {
 font-weight: 700;
 font-size: 18px;
