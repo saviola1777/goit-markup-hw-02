@@ -1,88 +1,292 @@
+:root {
+--first-color-text:#212121;
+--second-color-paragraf:#757575 ;
+--header-mail-tel:#757575;
+--color-bacround: #2F303A;
+}
 body {
-  position: relative;
-width: 1600px;
-height: 1880px;
-background: #FFFFFF;
-margin: 0;
-padding: 0;
-}
-.header { 
-     display: flex;
-    height: 80px;
-width: 1600px;
-}
-.header-nav {
-display: flex;
-}
+font-family: 'Roboto' , 'Raleway' , sans-serif;
 
-.header-logo {
-    color: #2196F3;
+ }
+.header-link-logo {
 font-family: 'Raleway';
-font-style: normal;
 font-weight: 700;
 font-size: 26px;
-line-height: 31px;
+line-height: 1.19;
 letter-spacing: 0.03em;
-margin: 24px 0 25px 215px;
+color: #2196F3;
 text-decoration: none;
-}
 
+}
 .header-span {
 color: #000000;
-font-family: 'Raleway';
-font-style: normal;
+}
+
+.header-list-nav {
+list-style: none;
+}
+.header-link {
+font-weight: 500;
+text-decoration: none;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--first-color-text);
+}
+ .current {
+    color: #2196F3;
+ }
+
+.header-contact {
+    list-style: none;
+}
+/* -------Фокус и Ховер------- */
+
+.header-mail-link {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color:var(--header-mail-tel);
+text-decoration: none;
+}
+.header-tel-link {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--header-mail-tel);
+text-decoration: none;
+}
+.header-mail-link:hover ,
+.header-mail-link:focus {
+color: #188CE8;
+}
+.header-tel-link:hover ,
+.header-tel-link:focus {
+color: #188CE8;
+}
+/* -----Секція Hero------- */
+.section-bisnes {
+    background:var(--color-bacround);
+}
+.hero-title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+/* -----------Кнопка Button-------- */
+.hero-btn {
+font-family: inherit;/* inherit Наслідує від боді */
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+.hero-btn:hover , 
+.hero-btn:hover {
+    color: #188CE8;
+}
+/* ------Cекція характеристика --- */
+
+.visually-hidden {
+    position: absolute; 
+width: 1px; 
+height: 1px; 
+margin: -1px; 
+border: 0; 
+padding: 0; 
+white-space: nowrap; 
+clip-path: inset(100%); 
+clip: rect(0 0 0 0); 
+overflow: hidden; 
+}
+.characteristics-title {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color:var(--first-color-text);
+}
+.characteristics-list {
+    list-style: none;
+}
+
+.characteristics-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71px;
+letter-spacing: 0.03em;
+color:var(--second-color-paragraf);
+}
+/* ---Сеція чим ми займаємося --- */
+
+.type-activity-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+text-align: center;
+color:var(--first-color-text);
+}
+.type-activity-list {
+    list-style: none;
+    
+}
+/* ---------Наша команда */
+.section-team {
+background: #F5F4FA;
+}
+.team-title {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--first-color-text);
+}
+.team-list {
+    list-style: none;
+}
+.team-name {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--first-color-text);
+}
+.team-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--second-color-paragraf);
+}
+/* ----Footer---- */
+.footer {
+    background:var(--color-bacround);
+}
+.footer-logo {
+    font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
-line-height: 31px;
+line-height: 1.19;
 letter-spacing: 0.03em;
+color: #2196F3;
 text-decoration: none;
-padding-right: 93px;
 }
-.header-list {
-     list-style: none; /*забирає точки маркування */
-    display: flex  }
-.header-link {
-       
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
+.footer-span {
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #000000;
+}
+.footer-list{
+list-style: none;
+}
+.footer-text {
+font-weight: 400;
 font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
-color: #212121;
-margin: 32px 50px 32px 0;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+
+}
+.footer-link-mail {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);;
 text-decoration: none;
-    }
-    
-
-.contact {
-    list-style-type: none;
-display: flex;
-    
 }
-.mail {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
+.footer-link-tel {
+font-weight: 400;
 font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);;
 text-decoration: none;
-color: #757575;
-margin: 32px 50px 32px 331px;
-
 }
-.mail:active {
-    color: aqua;
-
+.footer-link-mail:hover ,
+.footer-link-mail:focus {
+color: #188CE8;
 }
-.tel {
+.footer-link-tel:hover ,
+.footer-link-tel:focus {
+color: #188CE8;
+}
+/* ----2 cторінка Портфолио */
 
-font-family: 'Roboto';
-font-style: normal;
+.visually-hidden {
+    position: absolute; 
+width: 1px; 
+height: 1px; 
+margin: -1px; 
+border: 0; 
+padding: 0; 
+white-space: nowrap; 
+clip-path: inset(100%); 
+clip: rect(0 0 0 0); 
+overflow: hidden; 
+}
+.portfolio-list {
+    list-style: none;
+}
+.portfolio-button-link {
+ font-family: inherit;
 font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
-text-decoration: none;/* відміна підкреслювання */
-color: #757575; }
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+letter-spacing: 0.03em;
+color: #FFFFFF;  
+background: #2196F3;
+}
+.portfoklo-btn-links{
+font-family: inherit;  
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--first-color-text);
+}
+/* ----Hover  для Портфолио--- */
+
+.portfolio-button-link:hover , 
+.portfolio-button-link:focus {
+    color: #188CE8;
+ }
+ /* -------Друга секця списку  */
+ .portfolio-items {
+    list-style: none;
+}
+.portfolio-title {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--first-color-text);
+}
+.potfolio-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.03em;
+color: var(--second-color-paragraf);
+}
+
