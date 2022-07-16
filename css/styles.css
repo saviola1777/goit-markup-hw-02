@@ -1,25 +1,36 @@
 :root {
 --first-color-text:#212121;
 --second-color-paragraf:#757575 ;
+--three-color:#ffffff;
 --header-mail-tel:#757575;
+--color-logo :#2196F3;
+--color-curennt :#2196F3;
 --color-bacround: #2F303A;
+--second-background: #F5F4FA;
+----color-backround :#2196F3 ;
+--color-hover-focus:#188CE8;
+--black-rgba: 0px 4px 4px rgba(0, 0, 0, 0.15);
+---second-color-rgba: rgba(255, 255, 255, 0.6);
+--three-rgba: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 body {
 font-family: 'Roboto' , 'Raleway' , sans-serif;
-
+font-size: 14px;
+letter-spacing: 0.03em;
+color: var(--first-color-text);
+border-color:var(--color-bacround) ;
  }
 .header-link-logo {
 font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
-letter-spacing: 0.03em;
-color: #2196F3;
+color: var(--color-logo);
 text-decoration: none;
 
 }
 .header-span {
-color: #000000;
+color: var(--first-color-text);
 }
 
 .header-list-nav {
@@ -28,13 +39,12 @@ list-style: none;
 .header-link {
 font-weight: 500;
 text-decoration: none;
-font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--first-color-text);
 }
  .current {
-    color: #2196F3;
+    color: var(--color-curennt);
  }
 
 .header-contact {
@@ -44,7 +54,6 @@ color: var(--first-color-text);
 
 .header-mail-link {
 font-weight: 500;
-font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color:var(--header-mail-tel);
@@ -52,32 +61,24 @@ text-decoration: none;
 }
 .header-tel-link {
 font-weight: 500;
-font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--header-mail-tel);
 text-decoration: none;
 }
-.header-mail-link:hover ,
-.header-mail-link:focus {
-color: #188CE8;
-}
-.header-tel-link:hover ,
-.header-tel-link:focus {
-color: #188CE8;
-}
+
 /* -----Секція Hero------- */
 .section-bisnes {
     background:var(--color-bacround);
 }
-.hero-title {
+.bisnes-title {
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: #FFFFFF;
+color: var(--three-color);
 }
 /* -----------Кнопка Button-------- */
 .hero-btn {
@@ -87,14 +88,14 @@ font-size: 16px;
 line-height: 1.9;
 text-align: center;
 letter-spacing: 0.06em;
-color: #FFFFFF;
-background: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+color: var(--three-color);
+background: var(----color-backround);
+box-shadow: var(--black-rgba);
 border-radius: 4px;
 }
 .hero-btn:hover , 
-.hero-btn:hover {
-    color: #188CE8;
+.hero-btn:focus {
+    border-color: var(--color-hover-focus);
 }
 /* ------Cекція характеристика --- */
 
@@ -112,9 +113,7 @@ overflow: hidden;
 }
 .characteristics-title {
 font-weight: 700;
-font-size: 14px;
 line-height: 1.14;
-letter-spacing: 0.03em;
 text-transform: uppercase;
 color:var(--first-color-text);
 }
@@ -124,9 +123,7 @@ color:var(--first-color-text);
 
 .characteristics-text {
 font-weight: 400;
-font-size: 14px;
 line-height: 1.71;
-letter-spacing: 0.03em;
 color:var(--second-color-paragraf);
 }
 /* ---Сеція чим ми займаємося --- */
@@ -135,17 +132,15 @@ color:var(--second-color-paragraf);
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
-letter-spacing: 0.03em;
 text-align: center;
 color:var(--first-color-text);
 }
 .type-activity-list {
     list-style: none;
-    
-}
+    }
 /* ---------Наша команда */
 .section-team {
-background: #F5F4FA;
+background:var(--second-background);
 }
 .team-title {
 font-weight: 700;
@@ -162,7 +157,6 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
-letter-spacing: 0.03em;
 color: var(--first-color-text);
 }
 .team-text {
@@ -170,7 +164,6 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
-letter-spacing: 0.03em;
 color: var(--second-color-paragraf);
 }
 /* ----Footer---- */
@@ -182,8 +175,7 @@ color: var(--second-color-paragraf);
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
-letter-spacing: 0.03em;
-color: #2196F3;
+color: var(--color-logo);
 text-decoration: none;
 }
 .footer-span {
@@ -191,44 +183,30 @@ font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
-letter-spacing: 0.03em;
-color: #000000;
+color: var(--three-color);
 }
 .footer-list{
 list-style: none;
 }
 .footer-text {
 font-weight: 400;
-font-size: 14px;
 line-height: 1.71;
-letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--three-color);
 
 }
 .footer-link-mail {
 font-weight: 400;
-font-size: 14px;
 line-height: 1.71;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);;
+color: var(---second-color-rgba);
 text-decoration: none;
 }
 .footer-link-tel {
 font-weight: 400;
-font-size: 14px;
 line-height: 1.71;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);;
+color: var(---second-color-rgba);
 text-decoration: none;
 }
-.footer-link-mail:hover ,
-.footer-link-mail:focus {
-color: #188CE8;
-}
-.footer-link-tel:hover ,
-.footer-link-tel:focus {
-color: #188CE8;
-}
+
 /* ----2 cторінка Портфолио */
 
 .visually-hidden {
@@ -246,31 +224,41 @@ overflow: hidden;
 .portfolio-list {
     list-style: none;
 }
+/* Кнопки для портфоліо */
 .portfolio-button-link {
  font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
 text-align: center;
-letter-spacing: 0.03em;
-color: #FFFFFF;  
-background: #2196F3;
+color: var(--three-color);  
+background:var(----color-backround);
+box-shadow: var(--three-rgba);
+border-radius: 4px;
 }
-.portfoklo-btn-links{
+/* ----Hover  для Портфолио--- */
+.portfolio-button-link:hover , 
+.portfolio-button-link:focus {
+    border-color: var(--color-hover-focus);
+ }
+.portfoklo-btn-link{
 font-family: inherit;  
 font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
 text-align: center;
-letter-spacing: 0.03em;
 color: var(--first-color-text);
+background: #F5F4FA;
+border-radius: 4px;
 }
-/* ----Hover  для Портфолио--- */
+.portfolio-btn-link:hover , 
+.portfolio-btn-link:focus {
+    background-color: var(--color-hover-focus);
+    color:var(--three-color);
+}
 
-.portfolio-button-link:hover , 
-.portfolio-button-link:focus {
-    color: #188CE8;
- }
+
+
  /* -------Друга секця списку  */
  .portfolio-items  {
     list-style: none;
@@ -287,7 +275,6 @@ color: var(--first-color-text);
 font-weight: 400;
 font-size: 16px;
 line-height: 1.9;
-letter-spacing: 0.03em;
 color: var(--second-color-paragraf);
 }
 
