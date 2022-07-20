@@ -229,9 +229,6 @@ overflow: hidden;
     list-style: none;
 }
 /* Кнопки для портфоліо */
-
-/* ----Hover  для Портфолио--- */
-
 .portfolio-button{
 font-family: inherit;  
 font-weight: 500;
@@ -243,12 +240,14 @@ letter-spacing: 0.03em;
 color: var(--first-color-text);
 background: var(--second-background);
 border-radius: 4px;
+border-color:var(--second-background);
 }
 .btn {
 color: var(--three-color);  
 background:var(----color-backround);
 box-shadow: var(--three-rgba);
-}
+} 
+/* ----Hover  для Портфолио--- */
 .portfolio-button:hover , 
 .portfolio-button:focus {
     background-color: var(--color-hover-focus);
