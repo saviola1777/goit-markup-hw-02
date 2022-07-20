@@ -113,6 +113,7 @@ overflow: hidden;
 }
 .characteristics-title {
 font-weight: 700;
+font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
 color:var(--first-color-text);
@@ -132,6 +133,7 @@ color:var(--second-color-paragraf);
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
+letter-spacing:0.03em;
 text-align: center;
 color:var(--first-color-text);
 }
@@ -144,9 +146,10 @@ background:var(--second-background);
 }
 .team-title {
 font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
+font-size: 36px;
+line-height: 1.16;
+letter-spacing:0.03em;
+text-align: center;
 color: var(--first-color-text);
 }
 .team-list {
@@ -187,6 +190,7 @@ color: var(--three-color);
 }
 .footer-list{
 list-style: none;
+font-style: normal;
 }
 .footer-text {
 font-weight: 400;
@@ -225,34 +229,28 @@ overflow: hidden;
     list-style: none;
 }
 /* Кнопки для портфоліо */
-.portfolio-button-link {
- font-family: inherit;
+
+/* ----Hover  для Портфолио--- */
+
+.portfolio-button{
+font-family: inherit;  
 font-weight: 500;
+font-style: normal;
 font-size: 16px;
 line-height: 1.6;
 text-align: center;
+letter-spacing: 0.03em;
+color: var(--first-color-text);
+background: var(--second-background);
+border-radius: 4px;
+}
+.btn {
 color: var(--three-color);  
 background:var(----color-backround);
 box-shadow: var(--three-rgba);
-border-radius: 4px;
 }
-/* ----Hover  для Портфолио--- */
-.portfolio-button-link:hover , 
-.portfolio-button-link:focus {
-    border-color: var(--color-hover-focus);
- }
-.portfoklo-btn-link{
-font-family: inherit;  
-font-weight: 500;
-font-size: 16px;
-line-height: 1.6;
-text-align: center;
-color: var(--first-color-text);
-background: #F5F4FA;
-border-radius: 4px;
-}
-.portfolio-btn-link:hover , 
-.portfolio-btn-link:focus {
+.portfolio-button:hover , 
+.portfolio-button:focus {
     background-color: var(--color-hover-focus);
     color:var(--three-color);
 }
